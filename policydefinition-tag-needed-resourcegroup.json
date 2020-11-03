@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "displayName": "Tag Resourcegroups",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy restricts creation of resource groups without a Tag key and its value.",
+    "metadata": {
+      "version": "1.0.1",
+      "category": "Tags"
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Resources/subscriptions/resourceGroups"
+          },
+          {
+            "field": "tags['environment','department']",
+            "exists": false
+          }
+        ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/subscriptions/4c907634-af3f-48a3-9043-c3a06e5ab1a4/providers/Microsoft.Authorization/policyDefinitions/af00cb64-eef7-4503-a071-3c111f4ea37b",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "af00cb64-eef7-4503-a071-3c111f4ea37b"
+}
