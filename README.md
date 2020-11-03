@@ -33,6 +33,19 @@ Install Terraform - depending on your OS - https://www.terraform.io/downloads.ht
 
 Some of the installation needs you to modify/add the PATH on your machine.
 
+Commands for Packer - 
+
+packer build
+packer version
+
+Commands for Terraform -
+
+terraform init
+terraform validate
+terraform plan -out solution.plan
+terraform apply
+terraform destroy
+
 Terraform code files are #commented denoting the resource to be created by that section.
 
 main.tf - 
