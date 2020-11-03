@@ -35,16 +35,16 @@ Some of the installation needs you to modify/add the PATH on your machine.
 
 Commands for Packer - 
 
-packer build \n
-packer version
+- packer build
+- packer version
 
 Commands for Terraform -
 
-terraform init
-terraform validate
-terraform plan -out solution.plan
-terraform apply
-terraform destroy
+- terraform init
+- terraform validate
+- terraform plan -out solution.plan
+- terraform apply
+- terraform destroy
 
 Terraform code files are #commented denoting the resource to be created by that section.
 
@@ -68,6 +68,7 @@ variable "resource_group" {
   description = "Name of the resource group"
   default = "uda-proj-01"
 }
+
 
 Output
 
