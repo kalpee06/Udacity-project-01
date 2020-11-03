@@ -35,7 +35,7 @@ Some of the installation needs you to modify/add the PATH on your machine.
 
 Commands for Packer - 
 
-packer build
+packer build \n
 packer version
 
 Commands for Terraform -
