@@ -12,11 +12,11 @@ variable "vm_size" {
 }
 variable "admin_username" {
 	description = "Username for login"
-	default = "spotcheck"
+	default = "xxxxxxxxx"
 }
 variable "admin_password" {
 	description = "Password for username"
-	default = "Changeme123!"
+	default = "xxxxxxxxxxxxxxxxxx"
 }
 variable "storage_replication_type" {
 	description = "Storage tier and type of replication"
@@ -24,7 +24,7 @@ variable "storage_replication_type" {
 }
 variable "image_resource_id" {
 	description = "Resource information of image to be used"
-	default = "/subscriptions/4c907634-af3f-48a3-9043-c3a06e5ab1a4/resourceGroups/packer-rg/providers/Microsoft.Compute/images/myPackerImage2"
+	default = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/packer-rg/providers/Microsoft.Compute/images/myPackerImage2"
 }
 variable "vnet_name" {
 	description = "Name of the virtual network"
@@ -43,18 +43,10 @@ variable "subnet_range" {
 	description = "Subnet IP address range"
 	default = ["10.0.1.0/24"]
 }
-#variable "num_of_subnet" {
-#	description = "How many subnets are needed"
-#	default = 1
-#}
 variable "vm_name" {
 	description = "Name of the virtual machine"
 	#type = list(string)
 	default = "udacity-web"
-}
-variable "num_of_nic" {
-	description = "Number of Network Interface Cards to be provisioned"
-	default = 1
 }
 variable "num_of_vm" {
 	description = "How many virtual machines to create"
