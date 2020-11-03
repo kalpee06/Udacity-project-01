@@ -3,6 +3,7 @@
 Deploying a Web server in Azure using Terraform and Packer.
 
 Code requires all resources to be tagged and will ask for the tag values for tag keys Department and Environment.
+Please refer to "policydefinition-tag-needed-resourcegroup.json" and "policydefinition-tag-needed-resources.json" files.
 
 Create a server image by using Packer.Sample code can be found by following the link.
 [C1 - Azure Infrastructure Operations/project/starter_files/server.json]
