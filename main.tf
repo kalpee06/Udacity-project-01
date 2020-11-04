@@ -53,7 +53,7 @@ resource "azurerm_network_security_group" "NSG" {
 	name                       = "ExternalTraffic"
     priority                   = 110
     direction                  = "Inbound"
-    access                     = "Allow"
+    access                     = "Deny"
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "22"
